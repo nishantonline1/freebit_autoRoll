@@ -1,0 +1,30 @@
+{
+  "name": "FreeBitCo.in Auto Roll",
+  "description": "",
+  "version": "0.0001",
+  "manifest_version": 3,
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://www.freebitco.in/"],
+  "content_scripts": [
+    {
+      "matches": ["https://freebitco.in/*"],
+      "js": ["freeBitSW.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/favicon.png",
+      "32": "/images/favicon.png",
+      "48": "/images/favicon.png",
+      "128": "/images/favicon.png"
+    }
+  },
+  "icons": {
+    "16": "/images/favicon.png",
+    "32": "/images/favicon.png",
+    "48": "/images/favicon.png",
+    "128": "/images/favicon.png"
+  }
+}
